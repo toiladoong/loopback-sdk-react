@@ -1,7 +1,17 @@
 {
   "name": "loopback-sdk-react",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "Loopback SDK React",
+  "keywords": [
+    "react",
+    "loopback",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donglh/loopback-sdk-react.git"
+  },
+  "homepage": "https://github.com/donglh/loopback-sdk-react",
   "dependencies": {
     "antd": "^2.13.0",
     "axios": "^0.16.2",
