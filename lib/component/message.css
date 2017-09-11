@@ -1,0 +1,70 @@
+.jarvis-message {
+  font-size: 13px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 16px;
+  left: 0;
+  pointer-events: none;
+}
+
+.jarvis-message-notice {
+  padding: 8px;
+  text-align: center;
+}
+
+.jarvis-message-notice:first-child {
+  margin-top: -8px;
+}
+
+.jarvis-message-notice-content {
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  display: inline-block;
+  pointer-events: all;
+}
+
+.jarvis-message-success .anticon {
+  color: #00a854;
+}
+
+.jarvis-message-error .anticon {
+  color: #f04134;
+}
+
+.jarvis-message-warning .anticon {
+  color: #ffbf00;
+}
+
+.jarvis-message-info .anticon,
+.jarvis-message-loading .anticon {
+  color: #108ee9;
+}
+
+.jarvis-message .anticon {
+  margin-right: 8px;
+  font-size: 15px;
+  top: 1px;
+  position: relative;
+}
+
+.jarvis-message-notice.move-up-leave.move-up-leave-active {
+  animation-name: MessageMoveOut;
+  overflow: hidden;
+  animation-duration: .3s;
+}
+
+@keyframes MessageMoveOut {
+  0% {
+    opacity: 1;
+    max-height: 150px;
+    padding: 8px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    padding: 0;
+  }
+}
