@@ -91,20 +91,22 @@ module.exports = Model;
 # Services
 ```javascript
 import App from '../model/App';
+
 App.find({
-filter: {
-          limit: 10
-        }
+  filter: {
+    limit: 10
+  }
 }).then((responsive) => {
 ...
 }).catch(() => {
 ...
 })
+
 App.create({
-        title: '',
-        description: '',
-        view: '',
-        day: '',
-        status: ''
-      })
+  title: '',
+  description: '',
+  view: '',
+  day: '',
+  status: ''
+})
 ```
