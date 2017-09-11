@@ -33,11 +33,12 @@ const Model = new generateServices(
   {
     find: {
       url: '/',
+      method: 'GET', //option
       data: {
         filter: {
           limit: 10
-        }
-      }
+        } //option
+      } 
     },
     findOne: {
       url: '/',
